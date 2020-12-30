@@ -15,3 +15,12 @@ PS E:\Nodejs> git push -u origin main
 
 # cấu hình typecript
 tsc --init
+# cài đặt express
+yarn add express
+# cấu hình
+ "scripts": {
+    "server":"nodemon src/server.ts"
+  },
+# chạy dứng dụng
+yarn server
+# Lưu ý khi chạy phải save hết
