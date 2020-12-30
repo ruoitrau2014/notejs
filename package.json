@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "main": "src/server.ts",
   "author": "nganv",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  }
 }
