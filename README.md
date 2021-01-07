@@ -24,3 +24,4 @@ yarn add express
 # chạy dứng dụng
 yarn server
 # Lưu ý khi chạy phải save hết
+# CHia cấu trúc dự án thành MVC
