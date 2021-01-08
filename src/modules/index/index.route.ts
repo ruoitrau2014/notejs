@@ -13,6 +13,7 @@ export default class IndexRoute implements Route{
 this.InitializeRoute();
     }
     private InitializeRoute(){
+        //  gọi get('/') chạy function index 
         this.route.get(this.path,this.IndexController.index)
     }
 }

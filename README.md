@@ -25,3 +25,24 @@ yarn add express
 yarn server
 # Lưu ý khi chạy phải save hết
 # CHia cấu trúc dự án thành MVC
+# cấu hình kết nối mongodbd với mongoose
+#1Cài đặt
+yarn add mongoose
+yarn add @types/mongoose --dev
+#2 Kết nối DB
+  private ConnecttoMongoDB(){
+        try {
+            var connectstring='mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&ssl=false';
+            mongoose.connect(connectstring, {
+                useNewUrlParser: true,
+                useUnifiedTopology: true,
+                useFindAndModify: false,
+                useCreateIndex: true,
+            });
+            console.log('ket noi thanh cong');
+        } catch (error) {
+            console.log('khong ket noi duoc db');
+        }
+      
+
+    }
