@@ -46,3 +46,9 @@ yarn add @types/mongoose --dev
       
 
     }
+    // cấu hình env
+    step1: yarn add dotenv
+    step2: yarn add cross-env -dev
+    step3: add require('dotenv').config(); vào file server.ts
+    step4: tạo file .env ở thư mục gốc (/)
+    

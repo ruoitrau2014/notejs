@@ -4,6 +4,7 @@ import { Route } from 'core/interface';
 import express, { Router } from 'express';
 import mongoose from 'mongoose'
 class App{
+    
     // khoi tao app
     public app: express.Application;
     public port:string|number;
@@ -27,9 +28,15 @@ class App{
 
     }
     private ConnecttoMongoDB(){
+        
         try {
-            var connectstring='mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&ssl=false';
-            mongoose.connect(connectstring, {
+            
+        const connectionstring=process.env.MONGODB_URI;
+            if(!connectionstring){
+                console.log("connectionstring is invalid");
+                return;
+            }
+            mongoose.connect(connectionstring, {
                 useNewUrlParser: true,
                 useUnifiedTopology: true,
                 useFindAndModify: false,
