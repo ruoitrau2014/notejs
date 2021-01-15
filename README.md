@@ -51,4 +51,10 @@ yarn add @types/mongoose --dev
     step2: yarn add cross-env -dev
     step3: add require('dotenv').config(); vào file server.ts
     step4: tạo file .env ở thư mục gốc (/)
+    # Các middware
+    hpp bảo vệ các tấn cống parametter
+    helmet add các header bảo mật cho http req,res
+    morgan dùng để logging cho dự án
+    cors cho phép domain của cliend nào được vào
+    
     
