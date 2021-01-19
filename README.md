@@ -56,5 +56,5 @@ yarn add @types/mongoose --dev
     helmet add các header bảo mật cho http req,res
     morgan dùng để logging cho dự án
     cors cho phép domain của cliend nào được vào
-    
+    winston để hiển thị logging có màu mè
     
