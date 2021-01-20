@@ -57,4 +57,13 @@ yarn add @types/mongoose --dev
     morgan dùng để logging cho dự án
     cors cho phép domain của cliend nào được vào
     winston để hiển thị logging có màu mè
+    Cài đặt tsconfig path: yarn add --dev tsconfig-paths
+    # nodemon.json
+    {
+    "watch": ["src"],
+    "ext": ".ts,.js",
+    "ignore": [],
+    "exec": "ts-node -r tsconfig-paths/register"
+  }
+
     
