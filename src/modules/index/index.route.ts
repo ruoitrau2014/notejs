@@ -1,7 +1,7 @@
 
 
 
-import { Route } from "core/interface";
+import { Route } from "@core/interface";
 import { Router } from "express";
 import IndexController from "./index.controller";
 

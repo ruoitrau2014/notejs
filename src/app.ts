@@ -5,8 +5,8 @@ var morgan = require('morgan')
 var cors = require('cors')
 
 
-import { Route } from './core/interface';
-import { Logger } from './core/utils';
+import { Route } from '@core/interface';
+import { Logger } from '@core/utils';
 import express, { Router } from 'express';
 import mongoose from 'mongoose'
 class App{
