@@ -6,6 +6,7 @@ var cors = require('cors')
 
 
 import { Route } from '@core/interface';
+import { errorMiddleware } from '@core/middleware';
 import { Logger } from '@core/utils';
 import express, { Router } from 'express';
 import mongoose from 'mongoose'
@@ -41,6 +42,7 @@ class App{
             this.app.use(morgan('dev'));
             this.app.use(cors({ origin: 'your.domain.com', credentials: true }));
         }
+        this.app.use(errorMiddleware);
     }
     public listen(){
         this.app.listen(this.port,()=>{
