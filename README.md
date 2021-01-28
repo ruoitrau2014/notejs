@@ -66,4 +66,16 @@ yarn add @types/mongoose --dev
     "exec": "ts-node -r tsconfig-paths/register"
   }
 
+  import gravatar from 'gravatar';
+import bcryptjs from 'bcryptjs';
+import jsonwebtoken from 'jsonwebtoken';
+
+PS E:\Nodejs> yarn add gravatar
+PS E:\Nodejs> yarn add @types/gravatar --dev
+PS E:\Nodejs> yarn add bcryptjs
+PS E:\Nodejs> yarn add @types/bcryptjs --dev
+PS E:\Nodejs> yarn add jsonwebtoken
+PS E:\Nodejs> yarn add --dev  @types/jsonwebtoken
+
+
     
