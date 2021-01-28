@@ -69,13 +69,12 @@ yarn add @types/mongoose --dev
   import gravatar from 'gravatar';
 import bcryptjs from 'bcryptjs';
 import jsonwebtoken from 'jsonwebtoken';
-
+## cài đăt một số gói phục vụ api đăng ký
 PS E:\Nodejs> yarn add gravatar
 PS E:\Nodejs> yarn add @types/gravatar --dev
 PS E:\Nodejs> yarn add bcryptjs
 PS E:\Nodejs> yarn add @types/bcryptjs --dev
 PS E:\Nodejs> yarn add jsonwebtoken
 PS E:\Nodejs> yarn add --dev  @types/jsonwebtoken
-
 
     
