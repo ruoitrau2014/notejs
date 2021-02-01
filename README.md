@@ -76,5 +76,4 @@ PS E:\Nodejs> yarn add bcryptjs
 PS E:\Nodejs> yarn add @types/bcryptjs --dev
 PS E:\Nodejs> yarn add jsonwebtoken
 PS E:\Nodejs> yarn add --dev  @types/jsonwebtoken
-
-    
+# class-transformer chuyển serialize / deserialize các object too class; string too class hoặc ngược lại

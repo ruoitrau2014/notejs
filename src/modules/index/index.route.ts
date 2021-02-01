@@ -2,6 +2,8 @@
 
 
 import { Route } from "@core/interface";
+import validationMiddleware from "@core/middleware/validation.middleware";
+import registerDTO from "@modules/users/DTO/register.dto";
 import { Router } from "express";
 import IndexController from "./index.controller";
 

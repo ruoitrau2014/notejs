@@ -20,9 +20,10 @@ class App{
         this.app=express();
         this.port=process.env.POST || 5000;
         this.production=process.env.NODE_ENV=="production" ? true : false;
-        this.InitializeRoute(Routes);
+      
         this.ConnecttoMongoDB();
         this.InitializeMiddware();
+        this.InitializeRoute(Routes);
     }
     // khoi tao route
     private InitializeRoute (routes:Route[])
@@ -42,6 +43,9 @@ class App{
             this.app.use(morgan('dev'));
             this.app.use(cors({ origin: 'your.domain.com', credentials: true }));
         }
+        
+        this.app.use(express.json());
+        this.app.use(express.urlencoded({extended:true}));
         this.app.use(errorMiddleware);
     }
     public listen(){

@@ -1,3 +1,5 @@
+import { IsEmail, IsNotEmpty, MinLength } from "class-validator";
+
 export default class registerDTO{
     constructor(
         fistName:string,
@@ -10,9 +12,15 @@ export default class registerDTO{
         this.email = email;
         this.password = password;
       }
+    @IsNotEmpty()
     public fistName:string;
+    @IsNotEmpty()
     public lastName:string;
+    @IsNotEmpty()
+    @IsEmail()
     public email:string;
+    @IsNotEmpty()
+    @MinLength(6)
     public password:string;
   
 }

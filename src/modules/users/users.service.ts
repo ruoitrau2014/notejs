@@ -13,7 +13,7 @@ class UserService{
         if(isEmtryObject(model)){
             throw new HttpException(400,'model is emtry');
         };
-        const user=this.UserSchema.findOne({email:model.email});
+        const user= await this.UserSchema.findOne({email:model.email});
         if (user){
             throw new HttpException(409,'email da ton tai');
         };
