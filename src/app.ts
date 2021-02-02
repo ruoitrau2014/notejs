@@ -24,6 +24,7 @@ class App{
         this.ConnecttoMongoDB();
         this.InitializeMiddware();
         this.InitializeRoute(Routes);
+        this.InitializeErrorMiddware();
     }
     // khoi tao route
     private InitializeRoute (routes:Route[])
@@ -46,6 +47,9 @@ class App{
         
         this.app.use(express.json());
         this.app.use(express.urlencoded({extended:true}));
+      
+    }
+    private InitializeErrorMiddware(){
         this.app.use(errorMiddleware);
     }
     public listen(){
